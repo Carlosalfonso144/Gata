@@ -1,5 +1,4 @@
 div#contenedor{
-   background-color: #FFFFFF;
     width:76%;
     height:auto;
     overflow:hidden;
@@ -7,6 +6,28 @@ div#contenedor{
     border-style: solid;
     border-width: 3px;
     border-radius: 20px;
+}
+div.margen{
+    width:400%;
+    height:100%;
+}
+.margen1{
+    transition:all 15s;
+    width: 400%;
+    height: 100%;
+    margin-left: -100%;
+}
+.margen2{
+    transition:all 15s;
+    width: 400%;
+    height: 100%;
+    margin-left: -200%;
+}
+.margen3{
+    transition:all 15s;
+    width: 400%;
+    height: 100%;
+    margin-left: -300%;
 }
 div.slide1{
     width:25%;
@@ -31,47 +52,26 @@ div.slide4{
     float:left;
     position:relative;
 }
-div.margen{
-    width:400%;
-    height:100%;
-}
-.margen1{
-    transition:all 1s;
-    width: 400%;
-    height: 100%;
-    margin-left: -100%;
-}
-.margen2{
-    transition:all 1s;
-    width: 400%;
-    height: 100%;
-    margin-left: -200%;
-}
-.margen3{
-    transition:all 1s;
-    width: 400%;
-    height: 100%;
-    margin-left: -300%;
-}
-div.gatagifclass{
+div.gatogifclass{
     width:10%;
     height:20%;
     position:absolute;
     top:1%;
     left:19%;
 }
-
+img.gif1{
+    margin-top:60%;
+    margin-left:30%;
+    width:60%;
+    height:auto;
 }
-
-img#gatagif{
-width: 50%;
-background-color: red;
-
-
+.gif2{
+    transition:all 7s;
+    margin-top:40%;
+    margin-left:305%;
+    width:60%;
+    height:auto;
 }
-
-
-
 div.gatablanca{
     width:30%;
     height:20%;
@@ -80,38 +80,44 @@ div.gatablanca{
     left:37%;
 }
 img#gatablancadosgif{
-width: 50%;
-
+    width: 50%;
 }
-
-img.fondo1{
+img.fondo{
     width:100%;
-    height: auto
-    ;
-    
-}
-img.gif1{
-    margin-left:-90%;
-    width:60%;
-    height:auto;
-}
-.gif2{
-    transition:all 3s;
-    margin-left:130%;
-    width:60%;
-    height:auto;  
-
-
+    height: auto;    
 }
 div.colibri{
     width:80%;
     height:100%;
     position:absolute;
-    top:64%;
-    left:87%;
+    top:65%;
+    left:92%;
 }
-
 #colibriid{
     width: 9%;
 }
 
+
+div.gatacompleta{
+    width:300%;
+    position:absolute;
+   margin-top: 46%;
+
+}
+
+
+#gatacompletaid {
+  position: absolute;
+  left: 5px;
+  width: 100px;
+  height: 100px;
+  
+  
+  animation: move 200s ;
+}
+
+@keyframes move {
+  80% {
+       left: 100%;
+  }
+}

@@ -4,8 +4,7 @@ function tiem(){
     var tiempo = document.getElementById("pista1");
     var ot =tiempo.currentTime;
     console.log(ot);
-    
-    if (ot >= 10){
+    if (ot >= 34){
 	slide.className = ("margen1");
     if(ot >= 68){
 	slide.className = ("margen2");
@@ -15,11 +14,12 @@ function tiem(){
     }
     }else{
 	slide.className = ("margen");
-    }
-    
+    }    
 }
 function animar(){
-    var gaf=document.getElementById("gatagif");
+    var mau= document.getElementById("gatosiberi");
+    var gaf= document.getElementById("gatogif");
+        mau.play();
 	gaf.setAttribute("src","../imagenes/gatogit2.gif");
-	gaf.className = ("gif2")
+	gaf.className = ("gif2");
 }
